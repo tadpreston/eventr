@@ -9,7 +9,7 @@
         <li class="nav-item">
           <%= link_to "Home", root_path, class: "nav-link active", "aria-current" => "page" %>
         </li>
-        <% if user_signed_in? %>
+        <% unless session[:userinfo].blank? %>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               My Account
@@ -24,7 +24,7 @@
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Sign in", new_user_session_path, class: "nav-link" %>
+            <%= button_to "Sign in", '/auth/auth0', method: :post, data: { turbo: "false" }, class: "btn btn-link nav-link" %>
           </li>
         <% end %>
       </ul>
