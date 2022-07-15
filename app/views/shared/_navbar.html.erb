@@ -9,7 +9,7 @@
         <li class="nav-item">
           <%= link_to "Home", root_path, class: "nav-link active", "aria-current" => "page" %>
         </li>
-        <% unless session[:userinfo].blank? %>
+        <% if user_logged_in? %>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               My Account

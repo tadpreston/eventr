@@ -1,9 +1,9 @@
 class Auth0Controller < ApplicationController
   def callback
     user_info = UserInfo.new(request.env["omniauth.auth"])
-    session[:userinfo] = user_info.user_id
-
     User.find_or_create(user_info)
+
+    session[:id_token] = user_info.id_token
 
     redirect_to root_url
   end
