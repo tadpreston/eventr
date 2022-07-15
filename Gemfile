@@ -47,6 +47,7 @@ gem "bootsnap", require: false
 
 gem 'omniauth-auth0', '~> 3.0'
 gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.1'
+gem 'jwt', '~> 2.4', '>= 2.4.1'
 
 # Use Sass to process CSS
 # gem "sassc-rails"

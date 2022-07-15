@@ -275,6 +275,7 @@ DEPENDENCIES
   debug
   jbuilder
   jsbundling-rails
+  jwt (~> 2.4, >= 2.4.1)
   omniauth-auth0 (~> 3.0)
   omniauth-rails_csrf_protection (~> 1.0, >= 1.0.1)
   puma (~> 5.0)
