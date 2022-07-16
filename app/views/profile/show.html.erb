@@ -1,9 +1,6 @@
-<h1>Profile#show</h1>
-<p>Find me in app/views/profile/show.html.erb</p>
-
 <div class="container">
   <div class="row justify-content-md-center">
-    <div class="col-md-6 border rounded">
+    <div class="col-md-6 border rounded form-box">
       <div class="row p-2">
         <div class="col-6">Email:</div>
         <div class="col-6"><%= @user.email %></div>
@@ -17,6 +14,12 @@
       <div class="row p-2">
         <div class="col-6">Last Name:</div>
         <div class="col-6"><%= @user.last_name %></div>
+      </div>
+
+      <div class="row p-2">
+        <div class="col">
+          <%= link_to "Edit Profile", profile_edit_path, class: "btn btn-primary" %>
+        </div>
       </div>
     </div>
   </div>

@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   get '/auth/logout' => 'auth0#logout'
 
   get 'profile', to: 'profile#show'
+  patch 'profile', to: 'profile#update'
   get 'profile/edit', to: 'profile#edit'
-  put 'profile', to: 'profile#update'
 
   get "home/index"
   root "home#index"

@@ -9,6 +9,11 @@ class ProfileController < ApplicationController
   end
 
   def update
+    if params[:user][:uid] == current_user.uid
+      @user.update!(user_params)
+      flash[:notice] = "Profile successfully updated!"
+      redirect_to profile_path
+    end
   end
 
   private
@@ -19,5 +24,9 @@ class ProfileController < ApplicationController
 
   def authorize_access
     redirect_to root_path unless current_user
+  end
+
+  def user_params
+    params.require(:user).permit(:first_name, :last_name)
   end
 end
