@@ -50,6 +50,7 @@ gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.1'
 gem 'jwt', '~> 2.4', '>= 2.4.1'
 gem 'httparty', '~> 0.20.0'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
+gem 'pundit', '~> 2.2'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
