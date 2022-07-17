@@ -293,7 +293,7 @@ DEPENDENCIES
   jwt (~> 2.4, >= 2.4.1)
   omniauth-auth0 (~> 3.0)
   omniauth-rails_csrf_protection (~> 1.0, >= 1.0.1)
-  puma (~> 5.0)
+  puma (~> 5.6, >= 5.6.4)
   pundit (~> 2.2)
   rails (~> 7.0, >= 7.0.3.1)
   redis (~> 4.0)
