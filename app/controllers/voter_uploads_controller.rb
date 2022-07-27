@@ -1,0 +1,2 @@
+class VoterUploadsController < ApplicationController
+end

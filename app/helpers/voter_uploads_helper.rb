@@ -1,0 +1,2 @@
+module VoterUploadsHelper
+end
