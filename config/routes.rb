@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   patch 'profile', to: 'profile#update'
   get 'profile/edit', to: 'profile#edit'
 
+  get 'voter_uploads', to: 'voter_uploads#new'
+  post 'voter_uploads', to: 'voter_uploads#create'
+
   get "home/index"
   root "home#index"
 end

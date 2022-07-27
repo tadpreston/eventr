@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-md-6 border rounded form-box">
+      <h2 class="text-center">Voter File Upload</h2>
+      <div class="container m3">
+        <%= form_for @voter_upload do |f| %>
+          <div class="mb-3">
+            <%= f.label :voter_list, "Upload voter list", class: "form-label" %>
+            <%= f.file_field :voter_list, class: "form-control" %>
+          </div>
+          <%= f.submit "Upload voter list", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
